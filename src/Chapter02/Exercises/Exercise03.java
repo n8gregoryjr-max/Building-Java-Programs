@@ -2,7 +2,17 @@ package Chapter02.Exercises;
 
 public class Exercise03 {
     public static void main(String[] args) {
-
+        fibonacci();
+    }
+    public static void fibonacci() {
+        int length = 12;
+        int a = 1,b = 0,c;
+        for (int i = 1; i <= length; i++) {
+            System.out.print(a + " ");
+            c = a;
+            a = b + a;
+            b = c;
+        }
     }
 }
 /*

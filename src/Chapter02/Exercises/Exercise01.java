@@ -2,7 +2,25 @@ package Chapter02.Exercises;
 
 public class Exercise01 {
     public static void main(String[] args) {
+        formula();
+    }
+    public static void formula() {
+        // Initial position
+        double s0 = 5;
+        // Initial velocity
+        double v0 = 3.425;
+        // Rate of acceleration
+        double a = 1.5;
+        // Given time
+        double t = 50;
+        // Declare the position as a double
+        double s;
 
+        // Uses formula provided and declares it as s
+        s = s0 + v0 * t + .5 * a * (t * t);
+
+        // Returns s
+        System.out.println(s);
     }
 }
 /*

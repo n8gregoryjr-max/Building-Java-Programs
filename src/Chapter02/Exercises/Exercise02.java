@@ -2,7 +2,17 @@ package Chapter02.Exercises;
 
 public class Exercise02 {
     public static void main(String[] args) {
+        squareRoot();
+    }
+    public static void squareRoot() {
+        int i = 1;
+        int j = 3;
 
+        for (int k = 1; k <= 10; k++) {
+            System.out.print(i + " ");
+            i = i + j;
+            j = j + 2;
+        }
     }
 }
 /*
