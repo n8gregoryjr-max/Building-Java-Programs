@@ -12,7 +12,7 @@ I also intend to include personal things, like goals, timelines, and MANY many c
 
 
 # Current Goals:
-#### - Read through Chapter 2
+#### - ~~Read through Chapter 2~~ DONE
 - Complete Ch. 2 Exercises
 - Complete Ch. 2 Projects
 #### - Read through Chapter 3
