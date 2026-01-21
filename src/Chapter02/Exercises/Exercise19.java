@@ -1,8 +1,38 @@
 package Chapter02.Exercises;
 
 public class Exercise19 {
-    public static void main(String[] args) {
+    public static final int TOTAL_HEIGHT = 9;
+    public static final int NUMBER_OF_DIVIDER_LINES = 3;
+    public static final int SECTIONS = 2;
 
+    public static final int PILLAR_HEIGHT = (TOTAL_HEIGHT - NUMBER_OF_DIVIDER_LINES) / SECTIONS;
+
+    public static void main(String[] args) {
+        drawDividerLine();
+        drawPillars();
+        drawDividerLine();
+        drawPillars();
+        drawDividerLine();
+    }
+
+    public static void drawDividerLine() {
+        System.out.print("+");
+        for (int i = 1; i <= SECTIONS; i++) {
+            System.out.print("===");
+            System.out.print("+");
+        }
+    }
+
+    public static void drawPillars() {
+        System.out.println();
+        for (int i = 1; i <= PILLAR_HEIGHT; i++) {
+            System.out.print("|");
+            for (int j = 1; j <= SECTIONS; j++) {
+                System.out.print("   ");
+                System.out.print("|");
+            }
+            System.out.println();
+        }
     }
 }
 /*

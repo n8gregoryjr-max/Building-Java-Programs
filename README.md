@@ -5,15 +5,13 @@ I also intend to include personal things, like goals, timelines, and MANY many c
 
 # Included so far...
 
-- All Chapter 1 Exercises
-- All Chapter 1 Projects
+- Ch 1: Exercises and Projects
+- Ch 2: Exercises
 - Good vibes?
 
 
 
 # Current Goals:
-#### - ~~Read through Chapter 2~~ DONE
-- Complete Ch. 2 Exercises
 - Complete Ch. 2 Projects
 #### - Read through Chapter 3
 - Complete Ch. 3 Projects

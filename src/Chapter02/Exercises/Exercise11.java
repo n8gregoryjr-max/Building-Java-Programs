@@ -1,8 +1,41 @@
 package Chapter02.Exercises;
 
 public class Exercise11 {
-    public static void main(String[] args) {
+    // Values that can be changed (Will look weird unless TOTAL_WIDTH % SECTION_WIDTH = 0).
+    public static final int TOTAL_WIDTH = 36;
+    public static final int SECTION_WIDTH = 6;
+    // Formula to make method "bottom" work real good
+    public static final int SECTIONS = TOTAL_WIDTH / SECTION_WIDTH;
 
+    public static void main(String[] args) {
+        cleanOutput();
+    }
+
+    // Makes output a little more clean.
+    public static void cleanOutput() {
+        top();
+        bottom();
+    }
+
+    // 6 loops of a 10-character wide string w/ a '|' at the end
+    public static void top() {
+        for (int i = 1; i <= SECTIONS; i++) {
+            for (int j = 1; j < SECTION_WIDTH; j++) {
+                System.out.print(" ");
+            }
+            System.out.print("|");
+        }
+        System.out.println();
+    }
+
+    //
+    public static void bottom() {
+        for (int i = 1; i <= TOTAL_WIDTH; i++) {
+            final int remainder = i % SECTION_WIDTH;
+
+            System.out.print(remainder);
+        }
+        System.out.println();
     }
 }
 /*

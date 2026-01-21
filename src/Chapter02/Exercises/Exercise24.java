@@ -1,8 +1,26 @@
 package Chapter02.Exercises;
 
 public class Exercise24 {
-    public static void main(String[] args) {
+    public static final int WIDTH = 7;
+    public static final int LENGTH = 4;
 
+    public static void main(String[] args) {
+        for (int i = 1; i <= LENGTH; i++) {
+            for (int j = 1; j <= WIDTH; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for (int i = 1; i <= LENGTH; i++) {
+            for (int j = 1; j <= WIDTH; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= WIDTH; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
 /*
