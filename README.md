@@ -6,16 +6,15 @@ I also intend to include personal things, like goals, timelines, and MANY many c
 # Included so far...
 
 - Ch 1: Exercises and Projects
-- Ch 2: Exercises
-- Good vibes?
-
+- Ch 2: Exercises and Projects
 
 
 # Current Goals:
-- Complete Ch. 2 Projects
 #### - Read through Chapter 3
 - Complete Ch. 3 Projects
 - Complete Ch. 3 Exercises
 #### - Read through Chapter 4
  - Complete Ch. 4 Projects
 - Complete Ch. 4 Exercises
+
+And so on...

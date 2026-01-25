@@ -1,4 +1,4 @@
-package Chapter01.Exersizes;
+package Chapter01.Exercises;
 
 public class Difference {
     public static void main(String[] args) {

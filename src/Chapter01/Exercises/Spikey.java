@@ -1,4 +1,4 @@
-package Chapter01.Exersizes;
+package Chapter01.Exercises;
 
 public class Spikey {
     public static void main() {

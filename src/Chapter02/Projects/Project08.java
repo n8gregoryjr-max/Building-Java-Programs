@@ -1,7 +1,7 @@
 package Chapter02.Projects;
 
 public class Project08 {
-    public static final int OUTPUT = 10;     // Works with EVEN numbers from 8 onwards perfectly (Default is 10).
+    public static final int OUTPUT = 10;     // Works with EVEN positive integers from 8 onwards perfectly (Default is 10).
     public static final int INNER_WIDTH = OUTPUT * 3;
 
     public static void main(String[] args) {
