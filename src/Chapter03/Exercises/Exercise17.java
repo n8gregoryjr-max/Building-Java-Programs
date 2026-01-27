@@ -1,6 +1,21 @@
 package Chapter03.Exercises;
 
 public class Exercise17 {
+    public static void main(String[] args) {
+        padString("Frog", 10);
+    }
+
+    public static String padString(String word, int pad) {
+        String padding = "";
+        int length = word.length();
+        pad = pad - length;
+        for (int i = 0; i < pad; i++) {
+            padding = (padding + " ");
+        }
+        word = word + padding;
+        System.out.print(word);
+        return word;
+    }
 }
 /*
 Write a method called padString that accepts two parameters: a string and an integer representing a length.
