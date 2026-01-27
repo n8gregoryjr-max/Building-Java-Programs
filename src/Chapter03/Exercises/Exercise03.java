@@ -1,6 +1,20 @@
 package Chapter03.Exercises;
 
 public class Exercise03 {
+    public static void main(String[] args) {
+        printPowersOfN(10,5);
+    }
+
+    public static void printPowersOfN(int x, int y) {
+            // int z is a copy of x that allows it to get multiplied by it's original value y amount of times.
+        int z = x;
+            // Without using the math class, I could only see "Always printing '1 '" as a way of making this work.
+        System.out.print( 1 + " ");
+        for (int i = 0; i < y; i++) {
+            System.out.print( x + " ");
+            x = x * z;
+        }
+    }
 }
 /*
 Write a method called 'printPowersOfN' that accepts a base and an exponent as arguments and prints each power of the base from 'base^0' (1) up to that maximum power, inclusive.
