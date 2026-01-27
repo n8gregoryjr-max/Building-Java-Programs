@@ -1,6 +1,16 @@
 package Chapter03.Exercises;
 
 public class Exercise15 {
+    public static void main(String[] args) {
+        sphereVolume(2.0);
+    }
+
+    public static void sphereVolume(double r) {
+            // I could do it all in one line, but it feels more readable by doing it like this.
+        double r3 = Math.pow(r, 3);
+        double v = ((double) 4 / 3) * Math.PI * r3;
+        System.out.print(v);
+    }
 }
 /*
 Write a method called sphereVolume that accepts a radius as a parameter and returns the volume of a sphere with that radius.
