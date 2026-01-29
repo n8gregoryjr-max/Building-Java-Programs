@@ -1,6 +1,14 @@
 package Chapter03.Exercises;
 
 public class Exercise12 {
+    public static void main(String[] args) {
+        scientific(6.23, 5);
+    }
+
+    public static void scientific(double base, int e) {
+        double answer = base * Math.pow(10, e);
+        System.out.print(answer);
+    }
 }
 /*
 Write a method called scientific that accepts a real number base and an exponent as parameters and computes the base times 10 to the exponent, as seen in scientific notation.
