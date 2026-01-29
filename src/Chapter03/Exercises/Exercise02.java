@@ -1,6 +1,15 @@
 package Chapter03.Exercises;
 
 public class Exercise02 {
+    public static void main(String[] args) {
+        printPowersOf2(3);
+    }
+
+    public static void printPowersOf2(double num){
+        for (int i = 0; i <= num; i++) {
+            System.out.print((int)Math.pow(2, i) + " ");
+        }
+    }
 }
 /*
 Write a method called 'printPowersOf2' that accepts a maximum number as an argument and prints each power of 2 from 2^0 (1) up to that maximum power, inclusive.
