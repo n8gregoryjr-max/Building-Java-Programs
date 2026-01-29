@@ -1,6 +1,16 @@
 package Chapter03.Exercises;
 
 public class Exercise01 {
+    public static void main(String[] args) {
+        printNumbers(1);
+    }
+
+    public static void printNumbers(int num){
+        int maxNum = 30;
+        for (int i = 1; i <= num; i++) {
+            System.out.print("[" + i + "] ");
+        }
+    }
 }
 /*
 Write a method called 'printNumbers' that accepts a maximum number as an argument and prints each number from 1 up to that maximum, inclusive, boxed by square brackets.
