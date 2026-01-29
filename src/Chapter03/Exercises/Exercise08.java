@@ -1,6 +1,21 @@
 package Chapter03.Exercises;
 
 public class Exercise08 {
+    public static void main(String[] args) {
+        quadratic(1, -7, 12);
+    }
+
+    public static void quadratic(double a, double b, double c){
+            // Start by solving for the part that is constant in both roots.
+        double partOne = b * b - 4 * a * c;
+        double partTwo = Math.sqrt(partOne);
+            // Solve for roots.
+        double root1 = (partTwo - b) / (2 * a);
+        double root2 = (partTwo + b) / (2 * a);
+
+            // Prints roots as doubles. I could change them to int if we expected numbers that would result as integers.
+        System.out.print("x = " + root1 + ", x = " + root2);
+    }
 }
 /*
 Write a method called quadratic that solves quadratic equations and prints their roots.
