@@ -1,6 +1,30 @@
 package Chapter04.Exercises;
 
 public class Exercise06 {
+    void main() {
+        printRange(-1, 11);
+    }
+
+    public static void printRange(int a, int b) {
+        // Obtains the difference between the numbers.
+        int range = Math.abs(a - b);
+
+        // In the case both if-else are false, still prints first number.
+        IO.print(a + " ");
+
+        // Prints numbers going up to b if it is greater
+        if (a < b) {
+            for (int i = 1; i <= range; i++) {
+                IO.print((a + i) + " ");
+            }
+
+            // Prints numbers going down to b if it is lesser
+        } else if (b < a) {
+            for (int i = 1; i <= range; i++) {
+                IO.print((a - i) + " ");
+            }
+        }
+    }
 }
 /*
 Write a method called 'printRange' that accepts two integers as arguments and prints the sequence of numbers between the two arguments, separated by spaces.
