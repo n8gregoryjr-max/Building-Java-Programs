@@ -1,6 +1,29 @@
 package Chapter04.Exercises;
 
 public class Exercise19 {
+    void main() {
+        IO.print("Q" + quadrant(1, -1));
+    }
+
+    public static int quadrant(double x, double y) {
+            // Placeholder for if x or y is zero.
+        int a = 0;
+
+        if (y > 0) {
+            if (x > 0) {
+                a = 1;
+            } else if (x < 0) {
+                a = 2;
+            }
+        } else if (y < 0) {
+            if (x < 0) {
+                a = 3;
+            } else if (x > 0) {
+                a = 4;
+            }
+        }
+        return a;
+    }
 }
 /*
 Write a method called 'quadrant' that accepts as parameters a pair of double values representing an (x, y)
