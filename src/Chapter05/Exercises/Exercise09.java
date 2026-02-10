@@ -1,6 +1,24 @@
 package Chapter05.Exercises;
 
 public class Exercise09 {
+    void main() {
+        printFactors(24);
+    }
+    public static void printFactors(int f) {
+        if (f < 1) {
+            throw new IllegalArgumentException();
+        }
+
+        int p;      // Initializing a placeholder num.
+
+        IO.print(1);        // Fence-posting, like the example from the book!
+        for (int i = 2; i <= f ; i++) {
+            p = f % i;          // Formula to figure out if it divides perfectly.
+            if (p == 0) {
+                IO.print(" and " + i);
+            }
+        }
+    }
 }
 /*
 Write a method called 'printFactors' that accepts an integer as its parameter and uses a fencepost loop
