@@ -1,6 +1,35 @@
 package Chapter05.Exercises;
 
 public class Exercise24 {
+    void main() {
+        if (isAllVowels("eIEiO")) {
+            IO.print("True");
+        } else {
+            IO.print("False");
+        }
+    }
+
+    public static boolean isAllVowels(String word) {
+            // Checks for errors.
+        if (word == null) {
+            throw new IllegalArgumentException();
+        }
+
+            // Sets word to lowercase.
+        word = word.toLowerCase();
+
+            // Runs loop for each character in string.
+        for (int i = 0; i < word.length(); i++) {
+            char a = word.charAt(i);
+
+                // Checks if each character are vowels
+            if (a != 'a' && a != 'e' && a != 'i' && a != 'o' && a != 'u') {
+                    // Changes to false char is not a vowel.
+                return false;
+            }
+        }
+        return true;
+    }
 }
 /*
 Write a method called 'isAllVowels' that returns whether a string consists entirely of vowels (a, e, i, o, or u, case-insensitively).
