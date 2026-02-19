@@ -7,10 +7,10 @@ I intend to write understandable code using the teachings from the book while pr
 
 - Ch 1: Exercises and Projects
 - Ch 2: Exercises and Projects
-- Ch 3: Exercises
+- Ch 3: Exercises and Projects
 
 # Current Goals:
-1. [ ] Complete Ch. 3 Projects
+1. [x] ~~Complete Ch. 3 Projects~~
 2. [ ] Complete Ch. 4 Exercises
 3. [ ] Complete Ch. 4 Projects
 4. [ ] Complete Ch. 5 Exercises
