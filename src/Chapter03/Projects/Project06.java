@@ -1,6 +1,59 @@
 package Chapter03.Projects;
 
 public class Project06 {
+    public static int dayCounter = -1;
+
+    void main() {
+        printCalendar(31, 6);
+    }
+
+    public static void printCalendar(int days, int padding) {
+        calendarTop();
+        calendarBorder(padding);
+        calendarRows(days, padding);
+        calendarBorder(padding);
+    }
+
+    public static void calendarTop() {
+        IO.println("  Sun    Mon    Tue    Wed    Thu    Fri    Sat");
+    }
+
+    public static void calendarBorder(int padding) {
+
+        for (int i = 0; i < 7; i++) {
+            IO.print("+");
+            for (int j = 0; j < padding; j++) {
+                IO.print("-");
+            }
+        }
+        IO.println("+");
+    }
+
+    public static void calendarRows(int days, int padding) {
+        while (dayCounter <= days) {
+            for (int i = 1; i <= 7; i++) {
+                dayCounter++;
+                if (dayCounter >= 1 && dayCounter <= days) {
+                    IO.print("|");
+                    IO.print(padded(dayCounter, padding));
+                } else if (dayCounter <= 0 || dayCounter >= days) {
+                    IO.print("|");
+                    for (int j = 0; j < padding; j++) {
+                        IO.print(" ");
+                    }
+                }
+            }
+            IO.println("|");
+        }
+    }
+
+    public static String padded(int n, int width) {
+        String s = "" + n;
+        for (int i = s.length(); i < width; i++) {
+            s = " " + s;
+        }
+        return s;
+    }
 }
 /*
 Write a program that produces calendars as output. Your program should have a method that outputs a single month’s calendar like the one below,
