@@ -1,6 +1,22 @@
 package Chapter04.Exercises;
 
 public class Exercise04 {
+    void main() {
+        IO.print(daysInMonth(1));
+    }
+
+   public static int daysInMonth(int m) {
+        if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12) {
+            return 31;
+        } else if (m == 4 || m == 6 || m == 9 || m == 11) {
+            return 30;
+        } else if (m == 2) {
+            return 28;
+        } else {
+            throw new IllegalArgumentException("Needs to be a number between 1 and 12.");
+        }
+
+   }
 }
 /*
 Write a method called 'daysInMonth' that takes a month (an integer between 1 and 12) as a parameter and returns the number of days in that month in this year.
