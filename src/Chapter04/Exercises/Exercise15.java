@@ -1,6 +1,25 @@
 package Chapter04.Exercises;
 
 public class Exercise15 {
+    void main() {
+        IO.print(getGrade(96));
+    }
+
+    public static double getGrade(int g) {
+        if (g < 0 || g > 100) {
+            throw new IllegalArgumentException("Number is outside of range: 0-100");
+        }
+
+        if (g < 60) {
+            return 0.0;
+        } else if (g < 63) {
+            return 0.7;
+        } else if (g >= 95) {
+            return 4.0;
+        } else {
+            return (g - 55) / 10.0;
+        }
+    }
 }
 /*
 Write a method called 'getGrade' that accepts an integer representing a student’s grade in a course and returns that student’s numerical course grade.
