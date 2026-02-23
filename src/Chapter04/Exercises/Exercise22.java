@@ -1,6 +1,21 @@
 package Chapter04.Exercises;
 
+import java.util.Scanner;
+
 public class Exercise22 {
+    void main() {
+        printAcronym("Breath of the Wild");
+    }
+
+    public static void printAcronym(String sentence) {
+        Scanner acronym = new Scanner(sentence);
+        String answer = "";
+
+        while(acronym.hasNext()) {
+            answer += acronym.next().charAt(0);
+        }
+        IO.print(answer);
+    }
 }
 /*
 Write a method called 'printAcronym' that accepts a string as its parameter
