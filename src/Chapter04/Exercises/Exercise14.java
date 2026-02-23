@@ -1,6 +1,13 @@
 package Chapter04.Exercises;
 
 public class Exercise14 {
+    void main(){
+        pow2(-4.0, 3);
+    }
+
+    public static void pow2(double a, int b) {
+        IO.print(Math.pow(a, b));
+    }
 }
 /*
 Modify your 'pow' method from Exercise 5 to make a new method called 'pow2' that uses the type double
