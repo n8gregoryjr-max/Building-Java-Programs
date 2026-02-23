@@ -1,6 +1,38 @@
 package Chapter04.Exercises;
 
+import java.util.Scanner;
+
 public class Exercise10 {
+    void main() {
+        printGPA(new Scanner(System.in));
+    }
+
+    public static void printGPA(Scanner input) {
+        // Prompts user to enter a student's record and turns it into a string.
+        IO.print("Enter a student record: ");
+        String record = input.nextLine();
+
+        // Turns string into a scanner.
+        Scanner rec = new Scanner(record);
+
+        // First word is made into name, first int is turned into amount of reps.
+        String name = rec.next();
+        int reps = rec.nextInt();
+
+        // Initializes final answer.
+        double total = 0;
+
+        // Adds the rest of the values in the string.
+        for (int i = 0; i < reps; i++) {
+            total += rec.nextDouble();
+        }
+
+        // Divides all values by reps for an average value.
+        total /= reps;
+
+        // Final output.
+        IO.print(name + "'s grade is " + total);
+    }
 }
 /*
 Write a method called 'printGPA' that accepts a Scanner for the console as a parameter and calculates a student’s grade point average.
