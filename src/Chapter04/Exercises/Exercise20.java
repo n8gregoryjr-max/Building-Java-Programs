@@ -1,6 +1,20 @@
 package Chapter04.Exercises;
 
 public class Exercise20 {
+    void main() {
+        IO.print(numUnique(18, 3, 3));
+    }
+
+    public static int numUnique(int a, int b, int c) {
+        int counter = 1;
+        if (a != b || a != c) {
+            counter++;
+        }
+        if (b != c) {
+            counter++;
+        }
+        return counter;
+    }
 }
 /*
 Write a method called 'numUnique' that takes three integers as parameters and returns the number of unique integers among the three.
