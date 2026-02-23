@@ -1,6 +1,5 @@
 package Chapter04.Exercises;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Exercise08 {
@@ -11,17 +10,20 @@ public class Exercise08 {
 
     public static void smallestLargest(Scanner input) {
         int reps = input.nextInt();
-        int min = -12, max = 12;
-        int a, smallest = max, largest = min;
-        Random r = new Random();
+        int a, smallest, largest;
 
-        for (int i = 1; i <= reps; i++) {
+        IO.print("Number 1: ");
+        a = input.nextInt();
+        largest = a;
+        smallest = a;
 
-            // Assigns 'a' as a random number.
-            a = r.nextInt(min, max);
+        for (int i = 2; i <= reps; i++) {
 
             // Prints for each repetition.
-            IO.println("Number " + i + ": " + a);
+            IO.print("Number " + i + ": ");
+
+            // Prompts the user to input a number.
+            a = input.nextInt();
 
             // Changes value if 'a' is larger or smaller.
             if (a < smallest) {
