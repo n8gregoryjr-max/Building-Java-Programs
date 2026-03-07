@@ -1,22 +1,19 @@
 # Building Java Programs
 This repo was made to complete the exercises and projects found inside the book 
 "**Building Java Programs: A Back to Basics Approach**," 5e by Stuart Reges and Marty Stepp.
-I intend to write understandable code using the teachings from the book while practicing Java 25 syntax.
+I aim to write understandable, efficient, and maybe reusable code while learning Java. 
 
 # Included so far...
 
 - Ch 1: Exercises and Projects
 - Ch 2: Exercises and Projects
 - Ch 3: Exercises and Projects
+- Ch 4: Exercises
 
-# Current Goals:
-1. [x] ~~Complete Ch. 3 Projects~~
-2. [ ] Complete Ch. 4 Exercises
-3. [ ] Complete Ch. 4 Projects
-4. [ ] Complete Ch. 5 Exercises
-5. [ ] Complete Ch. 5 Projects
-6. [ ] **Read Chapter 6**
-7. [ ] Complete Ch. 6 Exercises
-8. [ ] Complete Ch. 6 Projects
+# Current Progress:
 
-And so on...
+- Ch 4 Projects - 3 of 8
+- Ch 5 Exercises - 5 of 25
+- Ch 5 Projects - 1 of 7
+- Ch 6 Exercises - 0 of ...
+- Ch 6 Projects - 0 of ...
