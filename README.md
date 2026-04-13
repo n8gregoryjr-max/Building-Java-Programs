@@ -12,8 +12,10 @@ I aim to write understandable, efficient, and maybe reusable code while learning
 
 # Current Progress:
 
-- Ch 4 Projects - 3 of 8
-- Ch 5 Exercises - 5 of 25
-- Ch 5 Projects - 1 of 7
-- Ch 6 Exercises - 0 of ...
-- Ch 6 Projects - 0 of ...
+- Ch 04 Exercises   DONE   - Projects 4 of 8
+- Ch 05 Exercises 05 of 25 - Projects 1 of 7
+- Ch 06 Exercises 00 of 20 - Projects 0 of 5
+- Ch 07 Exercises 00 of 21 - Projects 0 of 6
+- Ch 08 Exercises 00 of 23 - Projects 0 of 3
+- Ch 09 Exercises 00 of 18 - Projects 0 of 4
+- Ch 10 Exercises 00 of 21 - Projects 0 of 5
